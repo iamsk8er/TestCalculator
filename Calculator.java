@@ -32,7 +32,7 @@
         String expr = input;
         String[] romN = {"I","II","III","IV","V","VI","VII","VIII","IX","X"};
         List<String> romList = new ArrayList<>(Arrays.asList(romN));
-        expr = expr.replaceAll("\\s+", ""); // if any spaces or tabs
+        expr = expr.replaceAll("\\s+", "");
         String [] arrExpr = expr.split("(?=[+-/*])|(?<=[+-/*])");
         if (arrExpr.length != 3) {
             throw new Exceptions("т.к. только 1 оператор и 2 операнда/целые числа");
